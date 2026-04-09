@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+    <style>
+        /* General Reset & Body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Layout */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 30px;
+        }
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #34495e;
+            padding: 10px 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        /* Main Container for Sidebar & Content */
+        .container {
+            display: flex;
+            flex: 1; /* Pushes footer to the bottom */
+        }
+
+        /* Sidebar */
+        aside {
+            width: 250px;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-right: 1px solid #bdc3c7;
+        }
+
+        /* Main Content Area */
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Content Boxes */
+        .box {
+            background-color: #ffffff;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            padding: 15px;
+            width: 28%;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .box img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            background-color: #ccc; /* Placeholder color */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>MyLogo</h2>
+        </div>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <aside>
+            <h3>Sidebar</h3>
+            <p>Custom data: Important links, news, or secondary navigation can be placed here.</p>
+        </aside>
+
+        <main>
+            <div class="box">
+                <h3>Project Alpha</h3>
+                <img src="https://via.placeholder.com/200x150" alt="Box 1 Image">
+                <p>Description of the first project or service goes here.</p>
+            </div>
+            <div class="box">
+                <h3>Project Beta</h3>
+                <img src="https://via.placeholder.com/200x150" alt="Box 2 Image">
+                <p>Description of the second project or service goes here.</p>
+            </div>
+            <div class="box">
+                <h3>Project Gamma</h3>
+                <img src="https://via.placeholder.com/200x150" alt="Box 3 Image">
+                <p>Description of the third project or service goes here.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Sample Text &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

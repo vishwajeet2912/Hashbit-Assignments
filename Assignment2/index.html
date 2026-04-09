@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Assignment</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        input, button {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Assignment</h1>
+
+    <!-- Q1 -->
+    <div class="box">
+        <h3>Even Numbers</h3>
+        <button onclick="showEven()">Show</button>
+        <p id="evenResult"></p>
+    </div>
+
+    <!-- Q2 -->
+    <div class="box">
+        <h3>Calculator</h3>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <input type="text" id="operator" placeholder="+ - * /">
+        <button onclick="calculate()">Calculate</button>
+        <p id="calcResult"></p>
+    </div>
+
+    <!-- Q3 -->
+    <div class="box">
+        <h3>Find Tax</h3>
+        <input type="number" id="salary">
+        <button onclick="findTax()">Find</button>
+        <p id="taxResult"></p>
+    </div>
+
+    <!-- Q4 -->
+    <div class="box">
+        <h3>Sum of Product</h3>
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+        <button onclick="sumProduct()">Calculate</button>
+        <p id="sumResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
